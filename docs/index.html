@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+  <form action="https://www.google.com.br/search">
+    <fieldset>
+      <legend>Busca</legend>
+      <abbr>*</abbd><label for="termo_busca">Termo de Busca</label>
+        <input type="text" name="q" id="termo_busca" required placeholder="Digite algo">
+    </fieldset>
+    <fieldset>
+      <legend> Opções de Busca</legend>
+      <div>
+        <label for="campo_resenha" Resenha: </label>
+          <textarea name="resenha" rows="5" cols="20" placeholder="Digite sua resenha"></textarea>
+      </div>
+      <div>
+        <label form="campo_horario">Horário de Busca</label>
+        <select name="tbs" id="campo_horario">
+          <option value=""> Qualquer Horário</option>
+          <option value="qdr:h"> Ultima hora</option>
+          <option value="qdr:d"> ultimo dia</option>
+          <option value="qdr:w"> ultima semana</option>
+        </select>
+      </div>
+      <div>
+        <label> Data consulta:</label>
+        <input type="date" name="date" id="campo_data">
+      </div>
+      <div>
+        <label for="campo_qtd"> Quantidade Resultados</label>
+        <input type="number" name="qtd" min="10" max="50" step="10" </div>
+        <div>
+          <label for="campo_cpf"> CPF:</label>
+          <input type="text" name="cpf" id="campo_cpf" pattern="\d{3}.\d{3}.\d{3}-\d{2}" </div>
+    </fieldset>
+    <button type="submit" formaction="https://www.google.com.br/search">Pesquisar</button>
+  </form>
+</body>
+
+</html>
