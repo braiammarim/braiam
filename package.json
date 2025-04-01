@@ -1,0 +1,19 @@
+{
+  "name": "braiam",
+  "version": "1.0.0",
+  "description": "Repositório para estudo do conteúdo passado em sala de aula - Matéria Desenv. Web HTML, CSS, JS",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+  "build:css": "sass src/styles.scss dist/styles.css",
+  "watch:css": "sass --watch src/styles.scss:dist/styles.css"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.86.1"
+  }
+}
